@@ -20,7 +20,7 @@ static NSString *tokenRefreshCallback = @"FCMPlugin.onTokenRefreshReceived";
 static FCMPlugin *fcmPluginInstance;
 
 + (FCMPlugin *) fcmPlugin {
-    
+    fcmPluginInstance.appInForeground = YES;
     return fcmPluginInstance;
 }
 
